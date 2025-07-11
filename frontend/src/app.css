@@ -1,0 +1,111 @@
+:root {
+  --black: #181818;
+  --dark-grey: #2c2c2c;
+  --grey: #cccccc;
+  --white: #bfb5b5;
+  --accent: #e6c15c; 
+}
+
+/* Website background matched with impekable */
+body {
+  background: var(--black);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Chat box (has title inside) */
+.App {
+  background: var(--dark-grey);
+  max-width: 420px;
+  margin: 60px auto 0 auto;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  padding: 32px 24px 24px 24px;
+}
+
+/* Title */
+.App h1 {
+  color: var(--grey);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* user input box and button to ask */
+input[type="text"] {
+  width: 70%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 8px;
+  background: var(--black);
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+input[type="text"]:focus {
+  border-color: var(--accent);
+}
+
+button {
+  background: var(--accent);
+  color: var(--black);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+button:disabled {
+  background: #444;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Response  */
+.response {
+  background: var(--black);
+  color: var(--grey);
+  border-radius: 10px;
+  margin-top: 28px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.response h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.response p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--white);
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .App {
+    max-width: 98vw;
+    padding: 18px 6vw;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
