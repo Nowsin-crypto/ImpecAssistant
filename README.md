@@ -20,6 +20,8 @@ Responsive chat bubbles, dark mode, and user-friendly layout for a professional 
 Error Handling:
 Graceful feedback for API/network errors and missing input.
 
+Voice Output: Implemented a text to speech feature, and it generates the voice response that way, it reads the response to the user.
+
 Features Currently being implemented (Working on it)
 
 Voice Integration:
